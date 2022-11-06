@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>迷宫A4</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/ttui.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/twloader.js"></script>
+    <script>
+        //动态加载
+        TW_LoadScriptFromVersion("env.js", ['./js/ttui.js', './js/maze.js'], () => { Start() })
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        <h2>
+            迷宫A4
+        </h2>
+    </div>
+    <div class="buttons">
+        <div class="button" onclick="CreateA4(1)">正方形迷宫（入门）</div>
+        <div class="button" onclick="CreateA4(2)">正方形迷宫（简单）</div>
+        <div class="button" onclick="CreateA4(3)">正方形迷宫（中等）</div>
+        <div class="button" onclick="CreateA4(4)">正方形迷宫（困难）</div>
+        <div class="button" onclick="CreateA4(5)">正方形迷宫（地狱）</div>
+    </div>
+    <div class="board">
+        <canvas id="board" width="1754" height="1240" style="border: 1px solid #000;"></canvas>
+    </div>
+   
+    <div>
+        <ul>
+            <li>点击上面按钮--&gt;在弹出的图上长按--&gt;保存图片到手机。</li>
+            <li>适用A4纸张打印。</li>
+            <li>程序完全免费，无广告，欢迎分享。</li>
+            <li>当前版本 v1.0</li>
+            <li>微信公众号:"二头乌游戏"</li>
+            <li>email: eattonton@qq.com</li>
+            <li>Supported By TriWeb.cn</li>
+        </ul>
+    </div>
+  
+</body>
+ 
+</html>
